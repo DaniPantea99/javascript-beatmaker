@@ -18,6 +18,7 @@
                 </button>
                 <select name="kick-select" id="kick-select">
                     <option value="./sounds/kick.wav">Kick</option>
+                    <option value="./sounds/kick-heavy.wav">Kick Heavy</option>
                 </select>
             </div>
             <div class="kick">
@@ -40,6 +41,7 @@
                 </button>
                 <select name="snare-select" id="snare-select">
                     <option value="./sounds/snare.wav">Snare</option>
+                    <option value="./sounds/snare-acoustic.wav">Snare Acoustic</option>
                 </select>
             </div>
             <div class="snare">
@@ -62,6 +64,7 @@
                 </button>
                 <select name="hihat-select" id="hihat-select">
                     <option value="./sounds/hihat.wav">Hihat</option>
+                    <option value="./sounds/hihat-acoustic.wav">Hihat Acoustic</option>
                 </select>
             </div>
             <div class="hihat">
@@ -78,6 +81,12 @@
     </div>
 
     <div class="play">Play</div>
+
+    <div class="tempo">
+        <input type="range" class="tempo-slider" max="300" min="20" value="150">
+        <p>Tempo: <span class="tempo-nr">150</span></p>
+    </div>
+
     <audio class="kick-sound" src="./sounds/kick.wav"></audio>
     <audio class="snare-sound" src="./sounds/snare.wav"></audio>
     <audio class="hihat-sound" src="./sounds/hihat.wav"></audio>
